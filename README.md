@@ -11,7 +11,6 @@ Dibuat dengan NodeJS.
 $ git clone https://github.com/wfajriansyahh/bigtoken.git
 $ cd bigtoken
 $ npm install
-$ nano README.md
-$ RMAL4SE4L to your referral
+$ read -p "Enter your refferal : " reff; sed -i "s/RMAL4SE4L/${reff}/g" index.js
 $ node index.js
 ```
