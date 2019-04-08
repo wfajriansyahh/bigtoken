@@ -13,3 +13,10 @@ $ cd bigtoken
 $ npm install
 $ node index.js
 ```
+# How to use singlefile
+```sh
+$ git clone https://github.com/wfajriansyahh/bigtoken.git
+$ cd bigtoken
+$ npm install
+$ node singlefile.js REFERALMU LOOP
+```
