@@ -114,7 +114,7 @@ async function registerBigToken(email, referral) {
                             verification_code: `${verifyCode}`
                         }
                     });
-                    if(cURL.indexOf('"reward":true') > -1) {
+                    if(cURL.indexOf('"reward":true') > -1 || cURL != "") {
                         statusClaim = true;
                     } else {
                         statusClaim = false;
