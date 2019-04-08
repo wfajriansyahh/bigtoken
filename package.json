@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "delay": "^4.1.0",
+    "inquirer": "^6.2.2",
     "random-ua": "0.0.6",
     "randomstring": "^1.1.5",
     "request": "^2.88.0",

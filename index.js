@@ -3,6 +3,7 @@ Script created by Wildan F
 */
 const rp = require('request-promise');
 const randomstring = require('randomstring');
+const inquirer = require('inquirer');
 const random_ua = require('random-ua');
 const delay = require('delay');
 const S = require('string');
@@ -48,6 +49,15 @@ async function registerBigToken(email, referral) {
 }
 
 (async function() {
+    const qx = await inquirer.prompt([{
+        type: 'input',
+        name: 'referral',
+        message: 'Enter your referral',
+        validate:function(data) {
+            if(!data) return 'Can\'t empty';
+            return true;
+        }
+    }])
     let i = 0;
     while(i < 100) {
         i++;
@@ -71,7 +81,7 @@ async function registerBigToken(email, referral) {
             }
         }
         console.log(`[!] Email : ${doGetData.email}@${emailVerified}`);
-        const doRegister = await registerBigToken(doGetData.email+`@${emailVerified}`, `RMAL4SE4L`);
+        const doRegister = await registerBigToken(doGetData.email+`@${emailVerified}`, qx.referral);
         if(doRegister.indexOf('user_id') > -1) {
             console.log(`[!] Register success, sleep 20sec.`);
             await delay(20000);
