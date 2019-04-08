@@ -55,7 +55,7 @@ async function registerBigToken(email, referral) {
     const referral = process.argv[2];
     const loop = process.argv[3];
 
-    let statusEmail, statusRegister, statusInbox, statusClaim;
+    let statusEmail = false, statusRegister = false, statusInbox = false, statusClaim = false;
 
     for(let i = 1; i <= loop; i++) {
         const doGetData = await generateData();
@@ -128,5 +128,6 @@ async function registerBigToken(email, referral) {
         } catch(err) {
         }
         console.log(`${i}. ${email} => Email Created : ${statusEmail} | Account Created : ${statusRegister} | Inbox Found : ${statusInbox} | Claim : ${statusClaim}`);
+        statusEmail = false, statusRegister = false, statusInbox = false, statusClaim = false;
     }
 })();
