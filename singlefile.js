@@ -125,6 +125,6 @@ async function registerBigToken(email, referral) {
             }
         } catch(err) {
         }
-        console.log(`${email} => Email Created : ${statusEmail} | Account Created : ${statusRegister} | Inbox Found : ${statusInbox} | Claim : ${statusClaim}`);
+        console.log(`${i}. ${email} => Email Created : ${statusEmail} | Account Created : ${statusRegister} | Inbox Found : ${statusInbox} | Claim : ${statusClaim}`);
     }
 })();
