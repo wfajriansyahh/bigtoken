@@ -116,6 +116,8 @@ async function registerBigToken(email, referral) {
                     });
                     if(cURL.indexOf('"reward":true') > -1) {
                         statusClaim = true;
+                    } else {
+                        statusClaim = false;
                     }
                 } catch(err) {
                     statusClaim = false;
