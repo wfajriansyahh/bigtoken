@@ -1,0 +1,19 @@
+{
+  "name": "bigtoken",
+  "version": "1.0.0",
+  "description": "big token auto registration and verify email",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "author": "Wildan F",
+  "license": "ISC",
+  "dependencies": {
+    "delay": "^4.1.0",
+    "random-ua": "0.0.6",
+    "randomstring": "^1.1.5",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.4",
+    "string": "^3.3.3"
+  }
+}
