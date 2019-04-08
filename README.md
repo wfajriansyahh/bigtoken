@@ -2,7 +2,7 @@
 Fungsi script ini untuk registrasi dan verifikasi otomatis.
 Dibuat dengan NodeJS.
 # Requirement
-- nodejs
+- nodejs 8.6.0 +
 - internet
 - kopi
 - cewe
