@@ -11,4 +11,5 @@ Dibuat dengan NodeJS.
 $ git clone https://github.com/wfajriansyahh/bigtoken.git
 $ cd bigtoken
 $ npm install
+$ Change referral in RMAL4SE4L to your referral. In line 74
 ```
